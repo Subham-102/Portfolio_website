@@ -37,10 +37,10 @@ body {
 }
 .logo { 
     position: relative;
-    font-size: 30px;
+    font-size: 38px;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    
     cursor: pointer;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -49,7 +49,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 24px;
+    
     
 }
 .navbar{
@@ -57,7 +57,7 @@ body {
 }
 .navbar a {
     display: inline-block;
-    font-size: 23px;
+    font-size: 18px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -157,10 +157,11 @@ body {
     animation-delay: 1s;
 }
 .home-content p { 
-    font-size: 20px;
+    font-size: 18px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
+    color: rgb(244, 235, 222);
 }
 .home-scl a {
     display: inline-flex;
@@ -180,7 +181,7 @@ body {
     animation-delay: calc(.2s * var(--i));
     margin: 30px 15px 30px 0;
 }
-.home-sci a:hover {
+.home-scl a:hover {
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
@@ -196,7 +197,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
-    animation: slideTop 1s ease forwards;
+    animation: slideTop 2s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
                 0 0 25px #0ef;
@@ -208,6 +209,7 @@ body {
                 0 0 100px cyan,
                 0 0 200px cyan;
 }
+
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -241,6 +243,7 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+
 #services {
     color: aliceblue;
     font-size: 20px;
@@ -321,7 +324,7 @@ section {
 }
 .container1 {
     width: 600px;
-    height: 500px;
+    height: 850px;
     padding: 75px 90px;
     margin-left: 120px;
 }
@@ -357,7 +360,7 @@ section {
     position: relative;
     border-radius: 10px;
     width: 100%;
-    height: 5px;
+    height: 7px;
     background-color: #000000;
     animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
     transform: scaleX(0);
@@ -377,10 +380,10 @@ section {
     transform-origin: left;
 }
 .progress-line.python span {
-    width: 99%;
+    width: 90%;
 }
 .progress-line.html span {
-    width: 90%;
+    width: 75%;
 }
 .progress-line.css span {
     width: 80%;
@@ -389,10 +392,10 @@ section {
     width: 70%;
 }
 .progress-line.word span {
-    width: 65%;
+    width: 90%;
 }
 .progress-line.powerpoint span {
-    width: 50%;
+    width: 95%;
 }
 .progress-line span::after {
     position: absolute;
@@ -407,10 +410,10 @@ section {
     opacity: 0;
 }
 .progress-line.python span::after {
-    content: "99%";
+    content: "90%";
 }
 .progress-line.html span::after {
-    content: "90%";
+    content: "75%";
 }
 .progress-line.css span::after {
     content: "80%";
@@ -419,10 +422,10 @@ section {
     content: "70%";
 }
 .progress-line.word span::after {
-    content: "65%";
+    content: "90%";
 }
 .progress-line.powerpoint span::after {
-    content: "50%";
+    content: "95%";
 }
 .progress-line span::before {
     content: "";
@@ -588,6 +591,10 @@ section {
     margin-bottom: 10px;
     display: block;
 }
+.contact-list a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 .contact-list i {
     display: inline-block;
     color: #0ef;
@@ -599,14 +606,32 @@ section {
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
 }
-.contact-icons i {
+.contact-icons .icons i{
+	border:2px solid white;
+	border-radius:50px;
+	padding:5px;
+	margin:15px;
+	
+	transition: all ease-in 0.2s;
+	
+}
+
+
+.contact-icons .icons{
+	text-decoration: none; 
+	color:white; 
+	font-size: 20px;
+	
+	
+}
+.contact-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    
     border-radius: 50%;
     font-size: 20px;
     color: #0ef;
@@ -617,7 +642,7 @@ section {
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
-.contact-icons i:hover {
+.contact-icons a:hover {
     background: #0ef;
     color: #000;
     box-shadow: 0 0 20px #0ef;
@@ -722,6 +747,22 @@ section {
         opacity: 1;
     }
 }
+.title {
+    font-size: 2.5rem; /* Equivalent to text-4xl */
+    font-weight: 600;  /* Equivalent to font-semibold */
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #86198f; /* Equivalent to text-[#86198f] */
+}
+
+.subtitle {
+    font-family: serif; /* Equivalent to font-serif */
+    font-size: 1.25rem; /* Equivalent to sm:text-xl */
+    letter-spacing: 0.05em; /* Equivalent to sm:tracking-wider */
+    margin-top: 10px;
+}
 .timeline {
     display: flex;
     justify-content: center;
@@ -785,11 +826,11 @@ section {
         padding: 10px 5px;
     }
     .logo {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 10px;
     }
     .navbar a {
-        font-size: 20px;
+        font-size: 17px;
         margin-left: 20px;
     }
     .home {
@@ -843,7 +884,7 @@ section {
         padding: 15px 10px;
     }
     .logo {
-        font-size: 22px;
+        font-size: 35px;
     }
     .navbar a {
         font-size: 22px;
@@ -898,7 +939,7 @@ section {
         padding: 20px 10px;
     }
     .logo {
-        font-size: 25px;
+        font-size: 35px;
     }
     .navbar a {
         font-size: 25px;
@@ -953,7 +994,7 @@ section {
         padding: 20px 10px;
     }
     .logo {
-        font-size: 25px;
+        font-size: 35px;
     }
     .navbar a {
         font-size: 25px;
