@@ -1,0 +1,174 @@
+/* 📱 Mobile View Styles (Max Width: 768px) */
+@media (max-width: 768px) {
+    /* 🔹 Header & Navbar */
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+    .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .navbar {
+        display: none; /* Hide default navbar */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 10px 0;
+    }
+    .navbar a {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .show-menu {
+        display: flex !important;
+    }
+
+    /* 🔹 Home Section */
+    .home {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 50px 5%;
+    }
+    .home-content h1 {
+        font-size: 32px;
+    }
+    .home-content h3 {
+        font-size: 24px;
+    }
+    .home-content p {
+        font-size: 16px;
+    }
+    .btn-box {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    /* 🔹 About Section */
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    .about-img img {
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+    .about-text h2 {
+        font-size: 28px;
+    }
+    .about-text h4 {
+        font-size: 20px;
+    }
+    .about-text p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    /* 🔹 Skills Section */
+    .container1 {
+        width: 100%;
+        padding: 30px;
+    }
+    .Technical-bars .bar {
+        font-size: 16px;
+    }
+
+    /* 🔹 Projects Section */
+    .projects {
+        padding: 40px 5%;
+        text-align: center;
+    }
+    .projects h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+    .project-image img {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+    }
+    .project-details {
+        padding-left: 0;
+    }
+    .tech-stack span {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    /* 🔹 Contact Section */
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    .contact-text h2 {
+        font-size: 30px;
+    }
+    .contact-text h4 {
+        font-size: 18px;
+    }
+    .contact-text p {
+        font-size: 16px;
+    }
+    .contact-icons {
+        margin-top: 15px;
+    }
+    .contact-form form {
+        width: 100%;
+    }
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+    .send {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    /* 🔹 Footer */
+    .last-text {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* 🔹 Back to Top Button */
+    .back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+}

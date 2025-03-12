@@ -80,6 +80,12 @@ body {
 .navbar a:hover {
     color: #0ef;
 }
+.navbar a.active {
+    color: cyan; /* Change color when active */
+    font-weight: bold;
+    border-bottom: 2px solid cyan; /* Optional underline */
+}
+
 .navbar a:hover::after {
     width: 100%;
 }
