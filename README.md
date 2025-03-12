@@ -3,7 +3,7 @@
 This project is built using **HTML, CSS, and JavaScript** to showcase my **skills, projects, and experiences**. Additionally, smooth scrolling effects and interactive elements have been implemented to enhance user engagement. 
 
 ## 🌐 **Visit Portfolio**  
-🔗 [(https://subham-102.github.io/Portfolio_website/)](https://subham-102.github.io/Portfolio_website/)
+🔗 [https://subham-102.github.io/Portfolio_website/](https://subham-102.github.io/Portfolio_website/)
  
 
 ---
