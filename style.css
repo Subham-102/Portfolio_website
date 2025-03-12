@@ -170,7 +170,7 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 0 solid #0ef;
     border-radius: 50%;
     font-size: 20px;
     color: #0ef;
@@ -547,6 +547,104 @@ section {
 .main-text h2 span {
     color: #0ef;
 }
+/* Projects Section*/
+.projects {
+    text-align: center;
+    padding: 50px 14%;
+    background-color: #081b29;
+}
+.projects h1 {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    
+    letter-spacing: 2px;
+    width: 100%;
+}
+.projects h1 span{
+    color: cyan;
+}
+
+/* Project Card */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    background: #1F2937;
+    border-radius: 12px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Image */
+.project-image img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Project Details */
+.project-details {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.project-details h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 8px;
+}
+
+/* Tech Stack */
+.tech-stack span {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image img {
+        width: 100%;
+    }
+
+    .project-details {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+}
+
+
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -607,7 +705,7 @@ section {
     color: #0ef;
 }
 .contact-icons .icons i{
-	border:2px solid white;
+	border:2px solid cyan;
 	border-radius:50px;
 	padding:5px;
 	margin:15px;
@@ -687,25 +785,42 @@ section {
     color: #081b29;
     box-shadow: 0 0 20px #0ef;
 }
-.last-text p {
-    width: 100%;
+.last-text{
+    color: white;
+	height:85px;
+	width: 100%;
+	background-color: rgb(19, 13, 35);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.last-text p{
     text-align: center;
-    padding: 25px 0;
-    background: rgb(7, 85, 91);
-    font-weight: 300;
-    margin-top: 70px;
+    font-size: 17px;
 }
-.top {
+
+.back-to-top {
     position: fixed;
-    bottom: 2.1rem;
-    right: 2.1rem;
+    bottom: 20px;
+    right: 20px;
+    
+    background-color: rgb(86, 254, 254);
+    color: blue;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 15px;
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's on top */
+    font-weight: 800;
+    font-size: 15px;
+    transition: all .3s ease;
+    
 }
-.top i {
-    color: #000;
-    background: #0ef;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 0.5rem;
+
+.back-to-top:hover {
+    box-shadow: 0 0 20px cyan;
 }
 @keyframes slideRight {
     0% { 
